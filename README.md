@@ -1,22 +1,96 @@
-# Simple how to use
-This requires a simple setup to ensure it works. You need python installed on your computer for the setup to work.
+# 🔹 Python Macro Paster with Optional Discord Logging
 
-Inside your command prompt, run this:
-`pip install keyboard pyperclip pyautogui requests`
-Then, open the macro_paste.py file and select an option - please note, if you enter the Discord linking webhook, the program will close and you need to re-open it. This signifies that it saved your webhook locally.
+A simple Python macro tool that pastes predefined text when certain keys are pressed.
+Optionally logs every macro trigger to a Discord webhook.
 
-## Default Settings
-F - Macro 1
+---
 
-G - Macro 2
+## 📦 Features
 
-H - Macro 3
+* **Custom hotkeys** for instant pasting of predefined text.
+* **Optional Discord webhook logging** with embed formatting.
+* **Single-letter hotkeys automatically delete themselves** before pasting text.
+* **Simple "Exit" command** to quit without needing special key presses.
 
-These macro's don't provide any benefit but purely speed up the copy/paste mechanism so that you don't have to spend load's of time typing text you know you will use repetitively!
-You can change these very quickly inside of the script inside of this section (line 12) :
+---
 
-`macros = {
-    'f': "Text for Macro 1",
-    'g': "Text for Macro 2",
-    'h': "Text for Macro 3"
-}`
+## 📋 Requirements
+
+Before running this program, install:
+
+* [Python 3.8+](https://www.python.org/downloads/)
+* Required packages:
+
+  ```bash
+  pip install keyboard pyperclip pyautogui requests
+  ```
+
+---
+
+## 🚀 Installation
+
+1. **Download or Clone** this repository:
+
+   ```bash
+   git clone https://github.com/yourusername/macro-paster.git
+   cd macro-paster
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   *(or install manually as shown above)*
+
+3. **Edit macro text**
+   In the script file, find:
+
+   ```python
+   macros = {
+       'f1': "Text for Macro 1",
+       'f2': "Text for Macro 2",
+       'f3': "Text for Macro 3"
+   }
+   ```
+
+   Change the keys and text to whatever you want.
+
+---
+
+## 🖥 Usage
+
+1. **Run the program**:
+
+   ```bash
+   python macro.py
+   ```
+
+2. **Choose an option**:
+
+   * `A` → Start Program
+   * `B` → Setup System Linking (Discord Webhook, optional)
+   * `C` → Exit
+
+3. **While running**:
+
+   * Press a macro key (`F1`, `F2`, `F3`, or a letter) to paste text instantly.
+   * If the macro is a **letter**, the program will delete it first before pasting.
+   * To **quit**, type:
+
+     ```
+     Exit
+     ```
+
+     and press Enter in the terminal.
+## 🔗 Optional Discord Logging
+If you want to log macro usage to a Discord channel:
+1. Go to your Discord server settings → **Integrations** → **Webhooks**.
+2. Create a webhook and copy its URL.
+3. Choose **B | Setup System Linking** in the menu.
+4. Paste your webhook URL.
+5. Now every macro trigger will be sent as a Discord embed.
+
+## ⚠️ Notes
+- If you **don’t set a webhook**, the program will still work but won’t log to Discord.
