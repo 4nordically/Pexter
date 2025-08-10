@@ -7,11 +7,14 @@ Then, open the macro_paste.py file and select an option - please note, if you en
 
 ## Default Settings
 F - Macro 1
+
 G - Macro 2
+
 H - Macro 3
 
 These macro's don't provide any benefit but purely speed up the copy/paste mechanism so that you don't have to spend load's of time typing text you know you will use repetitively!
-You can change these very quickly inside of the script inside of this section:
+You can change these very quickly inside of the script inside of this section (line 12) :
+
 `macros = {
     'f': "Text for Macro 1",
     'g': "Text for Macro 2",
