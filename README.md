@@ -25,26 +25,7 @@ Before running this program, install:
   pip install keyboard pyperclip pyautogui requests
   ```
 
----
-
-## 🚀 Installation
-
-1. **Download or Clone** this repository:
-
-   ```bash
-   git clone https://github.com/yourusername/macro-paster.git
-   cd macro-paster
-   ```
-
-2. **Install dependencies**:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   *(or install manually as shown above)*
-
-3. **Edit macro text**
+**Edit macro text**
    In the script file, find:
 
    ```python
