@@ -1,7 +1,9 @@
 # 🔹 Python Macro Paster with Optional Discord Logging
 
 A simple Python macro tool that pastes predefined text when certain keys are pressed.
-Optionally logs every macro trigger to a Discord webhook. This is the information about our Latest release.
+Optionally logs every macro trigger to a Discord webhook. 
+
+This is the information about **release v1.1.0**
 
 ---
 
