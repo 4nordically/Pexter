@@ -1,4 +1,4 @@
-# 🔹 Python Macro Paster with Optional Discord Logging
+# 🔹 Python Test Paster, Pexter
 
 A simple Python macro tool that pastes predefined text when certain keys are pressed.
 Optionally logs every macro trigger to a Discord webhook. 
